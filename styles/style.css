@@ -1,0 +1,341 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    width: 1000px;
+   
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.hero{
+    background-color: black;
+    color: white;
+    height: 100vh;
+    font-size: 30px;
+    
+}
+nav{
+    display: flex;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+}
+li{
+    margin:50px;
+    list-style-type: none;
+}
+.logo{
+    color: yellow;
+    font-size: 90px;
+}
+.hero_text{
+    margin: 190px;
+
+}
+.hero_text>p{
+    margin-top: 30px;
+}
+.auto-type{
+    color: yellow;
+}
+.hero-area{
+    display: flex;
+
+  
+    align-items: center;
+    justify-content: space-between;
+}
+.social{
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.aboutme{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.me-cont{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+.me{
+    border-radius: 150px;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+}
+.abtext{
+    margin: 60px;
+}
+.about{
+    padding-top: 30px;
+    font-size: 25px;
+}
+.card{
+    width: 350px;
+    height: 700px;
+    box-shadow: 5px 5px 20px gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+.Projects{
+   padding: 20px;
+   text-align: center;
+}
+.card>img{
+    border-radius: 190px;
+    margin-left: 20px;
+    width:290px;
+    height: 300px;
+}
+hr{
+    width: 80%;
+    margin: 30px;
+
+}
+.card>a{
+    text-decoration: none;
+    color: rgb(25, 10, 236);
+}
+#hr{
+    margin-top: 50px;
+}
+@keyframes s1 {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 90%;
+    }
+}
+@keyframes s2 {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 80%;
+    }
+}
+@keyframes s3 {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 60%;
+    }
+}
+@keyframes s4 {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 60%;
+    }
+}
+@keyframes s5 {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 90%;
+    }
+}
+@keyframes s6 {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 60%;
+    }
+}
+@keyframes s7 {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 50%;
+    }
+}
+@keyframes s8 {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 60%;
+    }
+}
+@keyframes s9 {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 50%;
+    }
+}
+@keyframes s10 {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 30%;
+    }
+}
+@keyframes s11 {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 70%;
+    }
+}
+#s1{
+
+    background-color: orange;
+    margin: 10px;
+    animation-duration: 2s;
+    animation-name: s1;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+#s2{
+    width: 0px;
+    background-color: orange;
+    margin: 10px;
+    animation-duration: 2s;
+    animation-name: s2;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+#s3{
+    width: 0px;
+    background-color: orange;
+    margin: 10px;
+    animation-duration: 2s;
+    animation-name: s3;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+#s4{
+    width: 0px;
+    background-color: orange;
+    margin: 10px;
+    animation-duration: 2s;
+    animation-name: s4;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+#s5{
+    width: 0px;
+    background-color: orange;
+    margin: 10px;
+    animation-duration: 2s;
+    animation-name: s5;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+#s6{
+    width: 0px;
+    background-color: orange;
+    margin: 10px;
+    animation-duration: 2s;
+    animation-name: s6;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+#s7{
+    width: 0px;
+    background-color: orange;
+    margin: 10px;
+    animation-duration: 2s;
+    animation-name: s7;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+#s8{
+
+    background-color: orange;
+    margin: 10px;
+    animation-duration: 2s;
+    animation-name: s8;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+#s9{
+    width:  0px;
+    background-color: orange;
+    margin: 10px;
+    animation-duration: 2s;
+    animation-name: s9;
+    animation-iteration-count: infinite;   
+    animation-timing-function: ease-in-out;
+}
+#s10{
+
+    background-color: orange;
+    margin: 10px;
+    animation-duration: 2s;
+    animation-name: s10;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+#s11{
+
+    background-color: orange;
+    margin: 10px;
+    animation-duration: 2s;
+    animation-name: s11;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.awards{
+    display: flex;
+    margin: 60px;
+}
+.awa{
+   padding-top: 20px;
+   font-size: 25px;
+}
+.footer{
+    color: yellow;
+    background-color: black;
+    text-align: center;
+    font-size: xx-large;
+    height: 200px;
+   
+}
+#top{
+    width: 50px;
+    height: 50px;
+    right: 10px;
+    bottom: 10px;
+    position: fixed;
+    z-index: 99;
+    background-color: red;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 5px 5px 20px black;
+    display: none;
+
+}
+@media only screen and (max-width: 1000px){
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
