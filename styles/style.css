@@ -317,6 +317,9 @@ hr{
     text-align: center;
     font-size: xx-large;
     height: 300px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
    
 }
 #top{
