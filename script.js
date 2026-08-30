@@ -1,4 +1,15 @@
 (() => {
+// A more robust, cross-browser safe parsing function
+const parseDate = (dateStr) => {
+  if (!dateStr) return 0; // Fallback in case a date is missing
+  return new Date(`1 ${dateStr}`).getTime(); 
+};
+
+// Sort the contributions array in place
+window.siteContent.contributions.sort((a, b) => {
+  return parseDate(b.date) - parseDate(a.date);
+});
+
   const { contributions, highlights, posts, talks, memes } = window.siteContent;
   const list = document.querySelector('#contribution-list');
   const filters = document.querySelector('#role-filters');
@@ -37,7 +48,9 @@
   }
   document.querySelectorAll('.category-tab').forEach(button => button.addEventListener('click', () => { category = button.dataset.category; role = 'all'; document.querySelectorAll('.category-tab').forEach(tab => { const active = tab === button; tab.classList.toggle('active',active); tab.setAttribute('aria-selected',active); }); renderContributions(); }));
   const committed = contributions.filter(item => item.category === 'committed');
+  const notYetCommittedAuthored = contributions.filter(item => item.category === 'wip');
   document.querySelector('[data-stat="authored"]').textContent = committed.filter(item => item.role === 'authored').length;
+  document.querySelector('[data-stat="authored_wip"]').textContent = notYetCommittedAuthored.filter(item => item.role === 'authored').length;
   document.querySelector('[data-stat="reviewed"]').textContent = committed.filter(item => item.role === 'reviewed').length;
   renderContributions(); renderCollection('#highlight-list', highlights, 'Highlight'); renderCollection('#blog-list', posts, 'Blog'); renderCollection('#talk-list', talks, 'Talk'); renderCollection('#meme-list', memes, 'Meme');
   const quotes = [
@@ -48,7 +61,8 @@
     'Why do we fall, Bruce? So we can learn to pick ourselves up.',
     'As the child did. Without the rope. Then fear will find you again.',
     'Hope.',
-    'Why so serious?'
+    'Why so serious?',
+    'I have no special talents. I am only passionately curious.'
   ];
   document.querySelector('#header-quote').textContent = quotes[Math.floor(Math.random() * quotes.length)];
 })();
